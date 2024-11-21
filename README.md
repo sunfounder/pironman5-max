@@ -13,16 +13,7 @@ Quick Links:
 <a id="about_this_kit"></a>
 ## About this kit:
 
-Pironman 5 Max是我们Pironman 树莓派机箱系列的新旗舰产品。只适配目前最新的树莓派5。
-Pironman 5Max的最大特点是使用了两面透明的，类似电脑机箱的设计，配合RGB LED，和两个RGB风扇，让产品更加酷炫。
-配备OLED屏显示树莓派的基本信息，扩展了树莓派的开关机按键和状态等，把micro HDMI接口转接为更常用的标准HDMI接口，并且把供电接口，HDMI接口转到了和树莓派的USB接口同一面，接线更加美观。
-配备3个风扇，以及塔式散热器，极大程度的帮你降低树莓派5的高温。
-集成PCIe Gen 2 Switch，带两个M.2 M key PCIe接口，支持2230, 2242, 2260, 2280，可以安装2个NVMe Gen2的固态硬盘或者AI 加速器。
-可以安装两个NVMe SSD实现软件RAID 0 或者RAID 1做NAS；
-可以一个AI加速器，一个NVMe硬盘，提高AI性能；
-还可以两个AI加速器，提供更强的AI性能。
-GPIO扩展，方便你扩展树莓派的功能
-
+The Pironman 5 Max is the new flagship product in our Pironman Raspberry Pi case series, exclusively compatible with the latest Raspberry Pi 5. A standout feature of the Pironman 5 Max is its dual transparent sides, reminiscent of a PC case, combined with RGB LEDs and two RGB fans, adding an impressive flair to the product. It includes an OLED screen that displays basic information about the Raspberry Pi, and has expanded features such as power on/off buttons and status indicators. The micro HDMI port has been converted to a standard HDMI port for more common use, and the power and HDMI ports have been relocated to the same side as the Raspberry Pi’s USB ports, enhancing the aesthetics of the wiring. Equipped with three fans and a tower-style heatsink, it greatly assists in reducing the high temperatures of the Raspberry Pi 5. The case integrates a PCIe Gen 2 Switch with two M.2 M key PCIe slots supporting 2230, 2242, 2260, and 2280, allowing the installation of two NVMe Gen2 SSDs or AI accelerators. Users can set up two NVMe SSDs in software RAID 0 or RAID 1 for NAS configurations; combine one AI accelerator and one NVMe SSD to boost AI performance; or use two AI accelerators for even stronger AI capabilities. Additionally, GPIO expansion is provided for convenient extension of the Raspberry Pi’s functionality.
 
 Elevate your Raspberry Pi 5 with the Pironman 5, our top-tier case designed for unmatched style and functionality. It's the perfect blend of aesthetics and performance:
 

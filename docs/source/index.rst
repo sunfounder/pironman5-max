@@ -15,7 +15,30 @@
 |link_pironman5| - NVMe M.2 SSD PCIe Mini PC Case for Raspberry Pi 5
 ================================================================================
 
+
 Thanks for choosing our |link_pironman5|.
+
+
+The Pironman 5 Max is the new flagship product in our Pironman Raspberry Pi case series, 
+exclusively compatible with the latest Raspberry Pi 5. 
+
+A standout feature of the Pironman 5 Max is its dual transparent sides, 
+reminiscent of a PC case, combined with RGB LEDs and two RGB fans, 
+adding an impressive flair to the product. 
+It includes an OLED screen that displays basic information about the Raspberry Pi, 
+and has expanded features such as power on/off buttons and status indicators. 
+The micro HDMI port has been converted to a standard HDMI port for more common use, 
+and the power and HDMI ports have been relocated to the same side as the Raspberry Pi’s USB ports, 
+enhancing the aesthetics of the wiring. Equipped with three fans and a tower-style heatsink, 
+it greatly assists in reducing the high temperatures of the Raspberry Pi 5. 
+
+The case integrates a PCIe Gen 2 Switch with two M.2 M key PCIe slots supporting 2230, 
+2242, 2260, and 2280, allowing the installation of two NVMe Gen2 SSDs or AI accelerators. 
+Users can set up two NVMe SSDs in software RAID 0 or RAID 1 for NAS configurations; 
+combine one AI accelerator and one NVMe SSD to boost AI performance; 
+or use two AI accelerators for even stronger AI capabilities. 
+Additionally, GPIO expansion is provided for convenient extension of the Raspberry Pi’s functionality.
+
 
 .. .. note::
 
