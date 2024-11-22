@@ -33,7 +33,9 @@
 
 * M.2 NVMe SSD
 
-    The Pironman 5 features an NVMe PIP with two M.2 SSD connectors, accommodating four NVMe M.2 SSD sizes: 2230, 2242, 2260, and 2280. The connection is certified for Gen 2.0 speeds (5 GT/sec), but you can force it to Gen 3.0 (10 GT/sec).
+    The Pironman 5 features an NVMe PIP with two M.2 SSD connectors, 
+    accommodating four NVMe M.2 SSD sizes: 2230, 2242, 2260, and 2280. 
+    The connection is certified for Gen 2.0 speeds (5 GT/sec).
 
 * Screen
 
