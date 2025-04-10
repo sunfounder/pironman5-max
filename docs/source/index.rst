@@ -62,6 +62,7 @@ Elevate your Raspberry Pi 5 with the |link_pironman5|, our top-tier case designe
 
 * Raspberry Pi 5 mini PC
 * 0.96" OLED Display showing Raspberry Pi's CPU usage, temperature, disk usage, IP address, RAM usage etc.
+* With a built-in vibration switch, tapping the case gently wakes up the OLED display.
 * Tower cooler can cool a 100% CPU load Pi to 39°C at 25°C room temperature
 * 2 RGB Fans, with GPIO control
 * 1 PWM Fan on the Tower Cooler is controlled by the Raspberry Pi system.
