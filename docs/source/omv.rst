@@ -180,15 +180,15 @@ Please follow these steps to install OpenMediaVault on your Raspberry Pi:
 
    1. In the ``Shared Folders`` page, click on the shared folder you just created. Then click the ``Permissions`` button.
 
-   .. image:: img/omv/omv-share-3.png
+   .. image:: img/omv/omv-user-3.png
 
    2. In the ``Permissions`` page, set the permissions. Then click the ``Save`` button.
 
-   .. image:: img/omv/omv-share-4.png
+   .. image:: img/omv/omv-user-4.png
 
    3. After completing, click the ``Apply`` button.
 
-   .. image:: img/omv/omv-share-5.png
+   .. image:: img/omv/omv-user-5.png
 
    You can now use this new user to access your shared folder.
 
