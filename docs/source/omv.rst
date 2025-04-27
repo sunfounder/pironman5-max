@@ -112,7 +112,7 @@ Please follow these steps to install OpenMediaVault on your Raspberry Pi:
 
    In the main interface of OpenMediaVault, click on the ``Storage`` option in the left-side menu. In the ``Storage`` page, click on the ``Disks`` tab. On the ``Disks`` page, you will see all the disks on your Raspberry Pi. Ensure your NVMe PIP has a connected hard drive.
 
-   .. image:: img/omv/omv-disks.png
+   .. image:: img/omv/omv-disk.png
 
    1. In the sidebar, click the ``File System`` option. Then create and mount a file system. Choose ``ext4`` as the file system type.
 
