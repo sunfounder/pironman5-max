@@ -106,6 +106,7 @@ Please follow these steps to install OpenMediaVault on your Raspberry Pi:
 
    .. image:: img/omv/omv-raid-8.png
 
+   9. After the RAID configuration is complete, your hard drives are now in a RAID 0 or RAID 1 configuration, and you can use them as a single storage device.
 
 5. Configure Storage
 -----------------------
@@ -132,7 +133,7 @@ Please follow these steps to install OpenMediaVault on your Raspberry Pi:
 
    .. image:: img/omv/omv-mount-4.png
 
-   .. note:: If you are using dual hard drives, you can repeat the above steps to also mount the second hard drive to your Raspberry Pi.
+   .. note:: If you are using dual hard drives (and not RAID), you should repeat the above steps to also mount the second hard drive to your Raspberry Pi.
 
    5. After mounting, please Apply, and then you can see the data on your hard drives in the file system.
 
