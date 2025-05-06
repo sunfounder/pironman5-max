@@ -165,3 +165,7 @@ It means your computer system is too old and does not have `OpenSSH <https://lea
 
 
 
+If I set up OMV, can I still use the Pironman5's function?
+--------------------------------------------------------------------------------------------------------
+
+Yes, OpenMediaVault is set up on the Raspberry Pi system. Please follow the steps of :ref:`set_up_pi_os` to continue the configuration.

@@ -98,11 +98,11 @@ If you have any questions, please send an email to service@sunfounder.com and we
     what_do_we_need    
     assembly_instructions
     install/install_the_os
+    omv
     set_up/set_up_pironman5
     control/control_pironman5
     advanced/advanced
     compitable_nvme_ssd
-    omv
     faq
 
 **Copyright Notice**

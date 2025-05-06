@@ -1,4 +1,4 @@
-Setting Up OpenMediaVault
+(Optional) Setting Up OpenMediaVault
 =====================================
 
 .. warning::
