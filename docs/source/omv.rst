@@ -201,15 +201,19 @@ Please follow these steps to install OpenMediaVault on your Raspberry Pi:
 
    .. image:: img/omv/omv-smb-1.png
 
-   2. Enter the ``Shares`` page, click the ``Create`` button.
+   2. Apply the changes by clicking the ``Apply`` button.
+
+   .. image:: img/omv/omv-smb-2.png
+
+   3. Enter the ``Shares`` page, click the ``Create`` button.
 
    .. image:: img/omv/omv-smb-3.png
 
-   3. In the ``Create Share`` page, select the path of the shared folder. Then click the ``Save`` button. Incidentally, there are many options on this page that you can configure as needed.
+   4. In the ``Create Share`` page, select the path of the shared folder. Then click the ``Save`` button. Incidentally, there are many options on this page that you can configure as needed.
 
    .. image:: img/omv/omv-smb-4.png
 
-   4. Click ``Apply``.
+   5. Click ``Apply``.
 
    .. image:: img/omv/omv-smb-5.png
 
