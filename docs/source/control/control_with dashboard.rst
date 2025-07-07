@@ -99,7 +99,7 @@ Settings
 There is a settings menu in the upper right corner of the page where you can customize the settings according to your preferences. After making modifications, the changes will be saved automatically. If needed, you can click the CLEAR button at the bottom to clear the historical data.
 
 
-.. image:: img/dashboard_settings.png
+.. image:: img/dashboard_setting.png
   :width: 90%
   
 
