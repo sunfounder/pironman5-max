@@ -41,6 +41,13 @@ If you are using a Micro SD card, you can follow the tutorial below to install t
    .. image:: img/os_choose_os.png
       :width: 90%
 
+#. Since OpenMediaVault only supports a non-desktop version of the system, choose the **Raspberry Pi OS Lite** version.
+
+   .. image:: ../img/omv/omv-install-1.png
+      :width: 90%
+
+
+
 #. Click **Choose Storage** and select the appropriate storage device for the installation.
 
    .. image:: img/os_choose_sd.png

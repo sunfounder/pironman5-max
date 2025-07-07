@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-USB HDMI Adapter
+OTG HDMI Adapter
 ==========================================
 
 .. image:: img/hdmi_adapter.jpeg
@@ -21,9 +21,21 @@ This USB HDMI adapter board is specifically designed for the Raspberry Pi 5. Its
 
 Additionally, the HDMI port is converted to a standard HDMI Type A interface, offering broader compatibility.
 
-**NVMe Additional Power Supply**
 
-The board features a 5V power header specifically for NVMe PIP power supply. Coupled with an extension header, it can be connected to the NVMe's additional power interface to provide extra power.
+**OTG**
+
+The OTG interface utilizes the USB Type-C port on the Raspberry Pi to enable OTG (On-The-Go) functionality. This feature adds an additional front-facing USB 2.0 port, making it convenient to quickly connect and use simple USB devices.
+
+By default, OTG functionality is not enabled in the system. However, it is automatically activated after installing the Pironman 5 software. If needed, you can manually enable it by modifying the ``/boot/firmware/config.txt`` file:
+
+.. code-block:: bash
+
+  dtoverlay=dwc2,dr_mode=host
+
+
+This line configures the USB controller to operate in host mode, which is required for OTG functionality. Be sure to reboot the system after making changes to the configuration file for them to take effect.
+
+
 
 **1220RTC Battery Holder**
 

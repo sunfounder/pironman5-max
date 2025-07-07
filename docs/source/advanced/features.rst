@@ -17,12 +17,12 @@ Features
 
 **Parameters**
 
-* Dimension: 111.9x78.5x117mm
+* Dimension: 108.8 x 108.8 x 216mm
 * Material
     * Main body: aluminum alloy
-    * Two side panel: acrylic
+    * Side panel: acrylic
 * Support Platform: Raspberry Pi 5
-* Power Input: USB Type C, 5V/5A
+* Power Input: USB Type C, 12V/4A
 * Interfaces
     * Raspberry Pi standard 40-Pin GPIO
     * spring-loaded Micro SD socket
@@ -31,13 +31,11 @@ Features
     * 2 x USB 3.0
     * Gigabit LAN port
     * 2 x 4Kp60 HDMI Type A
-* Metal Power button
+* Power button
 * OLED screen: 0.96'' 128x64 resolution
-* 1 x PWM Fan, 2 x RGB Fans: 40x40x10mm
-* 4 x WS2812-5050 RGB LED
-* 38KHz IR Receiver
+* 9025 PWM Fan
 * Tower Cooler
-* 2 x PCIe 2.0 x1 M.2 M key 2230, 2242, 2260, 2280 for NVMe SSD or AI accelerator
+* Storage: 3.5-inch SATA (compatible with 2.5-inch) x2, micro SD card x1
 * 1220 Battery for RTC
 
 **Dimensional Drawing**

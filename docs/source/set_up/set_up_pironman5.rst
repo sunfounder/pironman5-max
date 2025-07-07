@@ -14,7 +14,7 @@
 
 .. _set_up_pironman5:
 
-4. Set up or Install Software
+5. Set up or Install Software
 ================================================
 
 Now that the system has been written to either the Micro SD or NVMe SSD, you can insert them into the Pironman 5 slot. Then press the power button to turn on the device.
@@ -31,25 +31,15 @@ You can then proceed to select the configuration tutorial based on your system.
 
     set_up_rpi_os 
     set_up_home_assistant
-    set_up_batocera
+
+.. set_up_batocera
 
 
-**About Power Button**
 
-The power button brings out the power button of the Raspberry Pi 5, and it functions just like the power button of the Raspberry Pi 5.
+**Button Functions**
 
-* **Shutdown**
+* **Short press**: Powers on the Raspberry Pi, wakes up the OLED screen, or cycles through different OLED display modes.
+* **Long press (2 seconds)**: Initiates a safe shutdown of the Raspberry Pi.
+* **Long press (5 seconds)**: Forces an immediate power cut (hard shutdown).
 
-    * If you run Raspberry Pi **Bookworm Desktop** system, you can press the power button twice in quick succession to shutdown. 
-    * If you run Raspberry Pi **Bookworm Lite** system, press the power button a single time to initiate a shutdown.
-    * To force a hard shutdown, press and hold the power button.
-
-* **Power on**
-
-    * If the Raspberry Pi board is shut down, but still powered, single-press to power on from a shutdown state.
-
-* If you are running a system that does not support a shutdown button, you can hold it for 5 seconds to force a hard shutdown, and single-press to power on from a shutdown state.
-
-
-    
-    
+.. note:: The 5-second long press is equivalent to unplugging the power and should only be used when the system is unresponsive, as it may lead to data loss or file system corruption.

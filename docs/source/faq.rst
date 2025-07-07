@@ -35,17 +35,6 @@ If you have already installed ``pironman 5``, you can remove the ``dashboard`` m
    sudo apt purge influxdb
    sudo systemctl restart pironman5
 
-Does the Pironman 5 support retro gaming systems?
-------------------------------------------------------
-Yes, it is compatible. However, most retro gaming systems are streamlined versions that cannot install and run additional software. This limitation may cause some components on the Pironman 5, such as the OLED display, the two RGB fans, and the 4 RGB LEDs, to not function properly because these components require the installation of Pironman 5's software packages.
-
-
-.. note::
-
-    The Batocera.linux system is now fully compatible with Pironman 5. Batocera.linux is an open-source and completely free retro-gaming distribution.
-
-    * :ref:`install_batocera`
-    * :ref:`set_up_batocera`
 
 How to Control Components Using the ``pironman5`` Command
 ----------------------------------------------------------------------
@@ -70,40 +59,59 @@ It is recommended to use a spare card for this step.
 
 * :ref:`update_bootloader`
 
-How to Copy the System from the SD Card to an NVMe SSD?
--------------------------------------------------------------
+.. How to Copy the System from the SD Card to an NVMe SSD?
+.. -------------------------------------------------------------
 
-If you have an NVMe SSD but do not have an adapter to connect your NVMe to your computer, you can first install the system on your Micro SD card. Once the Pironman 5 boots up successfully, you can copy the system from your Micro SD card to your NVMe SSD. Detailed instructions are as follows:
+.. If you have an NVMe SSD but do not have an adapter to connect your NVMe to your computer, you can first install the system on your Micro SD card. Once the Pironman 5 boots up successfully, you can copy the system from your Micro SD card to your NVMe SSD. Detailed instructions are as follows:
 
 
-* :ref:`copy_sd_to_nvme_rpi`
+.. * :ref:`copy_sd_to_nvme_rpi`
 
 
 OLED Screen Not Working?
 --------------------------
 
-If the OLED Screen is not displaying or displaying incorrectly, you can follow these steps to troubleshoot the issue:
 
-Check if the FPC cable of the OLED Screen is properly connected.
+If the OLED screen is not displaying or is displaying incorrectly, follow these troubleshooting steps:
 
-#. Use the following command to view the program's run logs and check for error messages.
+1. **Check the OLED Screen Connection**
 
-   .. code-block:: shell
+   Ensure that the FPC cable of the OLED screen is properly connected.
 
-      cat /opt/pironman5/log
+2. **Check OS Compatibility**
 
-#. Alternatively, use the following command to check if the OLED's i2c address 0x3C is recognized:
-    
-   .. code-block:: shell
-        
-        sudo i2cdetect -y 1
+   Make sure you are running a compatible operating system on your Raspberry Pi.
 
-#. If the first two steps don't reveal any issues, try restarting the pironman5 service to see if that resolves the problem.
+3. **Check I2C Address**
 
+   Run the following command to check whether the OLED's I2C address (0x3C) is recognized:
 
    .. code-block:: shell
 
-        sudo systemctl restart pironman5.service
+      sudo i2cdetect -y 1
+
+   If the address is not detected, enable I2C using the following command:
+
+   .. code-block:: shell
+
+      sudo raspi-config
+
+4. **Restart the pironman5 Service**
+
+   Restart the `pironman5` service to see if it resolves the issue:
+
+   .. code-block:: shell
+
+      sudo systemctl restart pironman5.service
+
+5. **Check the Log File**
+
+   If the issue persists, check the log file for error messages and provide the information to customer support for further analysis:
+
+   .. code-block:: shell
+
+      cat /var/log/pironman5/pm_auto.oled.log
+
 
 .. _openssh_powershell:
 

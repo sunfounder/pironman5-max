@@ -114,7 +114,12 @@ Now you can install the operating system on your NVMe SSD.
 
    .. image:: img/os_choose_os.png
       :width: 90%
-      
+
+#. Since OpenMediaVault only supports a non-desktop version of the system, choose the **Raspberry Pi OS Lite** version.
+
+   .. image:: ../img/omv/omv-install-1.png
+      :width: 90%
+
 
 #. In the **Storage** option, select the appropriate storage device for the installation.
 

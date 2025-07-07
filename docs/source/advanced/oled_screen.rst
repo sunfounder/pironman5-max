@@ -16,8 +16,10 @@ OLED Screen
 ===================
 
 .. image:: img/oled_screen.png
-    :width: 400
-    
+
+.. image:: img/oled_screen2.png
+
+The OLED module can be directly fixed on the Piroman5 NAS via 4-pin pins.
 
 * **Size**: 0.96''
 * **Material**: PM OLED
@@ -31,6 +33,11 @@ OLED Screen
 * **Pixel Size**: 0.154x0.154mm
 * **Viewing Angle**: Full view
 * **Operating Temperature**: -20~70°C
-* **Communication Method**: IIC/SPI/Parallel
-* **Connection Method**: 0.5mm pitch plug-in type FPC
+* **Communication Method**: IIC
+* **Address**: 0x3C or 0x3D
 
+Connect the pads on the back and the address will change from 0x3C to 0x3D.
+
+
+
+.. image:: img/oled_screen_b.png

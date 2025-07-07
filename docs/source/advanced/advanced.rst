@@ -24,13 +24,21 @@ This chapter is a detailed description of all the components in Pironman, as wel
 .. toctree::
     :maxdepth: 2
     
-    features
-    io_board
-    hdmi_adapter
-    nvme_pip
-    microsd_extender
-    power_switch_conventor
-    tower_cooler
-    oled_screen
-    fans
     login_rpi/login_rpi
+    features
+    nas_board
+    fans
+    oled_screen
+    microsd_extender
+    hdmi_adapter
+    
+    .. io_board
+    .. 
+    .. nvme_pip
+    .. 
+    .. power_switch_conventor
+    .. tower_cooler
+    .. 
+
+    
+    .. 

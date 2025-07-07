@@ -14,10 +14,10 @@
 
 .. _set_up_pi_os:
 
-Set Up on Raspberry Pi/Ubuntu/Kali/Homebridge OS
+Set Up on Raspberry Pi
 ==================================================
 
-If you have installed Raspberry Pi OS, Ubuntu, Kali Linux or Homebridge on your Raspberry Pi, you will need to configure the Pironman 5 using the command line. Detailed tutorials can be found below:
+.. If you have installed Raspberry Pi OS, Ubuntu, Kali Linux or Homebridge on your Raspberry Pi, you will need to configure the Pironman 5 using the command line. Detailed tutorials can be found below:
 
 .. note::
 
@@ -61,7 +61,7 @@ Downloading and Installing the ``pironman5`` Module
    .. code-block:: shell
 
       cd ~
-      git clone https://github.com/sunfounder/pironman5.git
+      git clone -b nas https://github.com/sunfounder/pironman5.git
       cd ~/pironman5
       sudo python3 install.py
 
@@ -70,11 +70,10 @@ Downloading and Installing the ``pironman5`` Module
    Upon reboot, the ``pironman5.service`` will start automatically. Here are the primary configurations for Pironman 5:
    
    * The OLED screen displays CPU, RAM, Disk Usage, CPU Temperature, and the Raspberry Pi's IP Address.
-   * Four WS2812 RGB LEDs will light up in blue with a breathing mode.
      
    .. note::
     
-     RGB fans won't spin unless the temperature hits 60°C. For different activation temperatures, see :ref:`cc_control_fan`.
+     Fans won't spin unless the temperature hits 60°C. For different activation temperatures, see :ref:`cc_control_fan`.
 
 #. You can use the ``systemctl`` tool to ``start``, ``stop``, ``restart``, or check the ``status`` of ``pironman5.service``.
 

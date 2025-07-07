@@ -12,25 +12,15 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-|link_pironman5| - NVMe M.2 SSD PCIe Mini PC Case for Raspberry Pi 5
+Pironman 5 NAS
 ================================================================================
 
 
 Thanks for choosing our |link_pironman5|.
 
 
-The Pironman 5 Max is the new flagship product in our Pironman Raspberry Pi case series, 
-exclusively compatible with the latest Raspberry Pi 5. 
-
-A standout feature of the Pironman 5 Max is its dual transparent sides, 
-reminiscent of a PC case, combined with RGB LEDs and two RGB fans, 
-adding an impressive flair to the product. 
-It includes an OLED screen that displays basic information about the Raspberry Pi, 
-and has expanded features such as power on/off buttons and status indicators. 
-The micro HDMI port has been converted to a standard HDMI port for more common use, 
-and the power and HDMI ports have been relocated to the same side as the Raspberry Pi’s USB ports, 
-enhancing the aesthetics of the wiring. Equipped with three fans and a tower-style heatsink, 
-it greatly assists in reducing the high temperatures of the Raspberry Pi 5. 
+Pironman 5 NAS是我们Pironman 树莓派机箱系列的新产品。只适配目前最新的树莓派5。NAS Network Attached Storage，是一个本地网络储存盘，可以给你提供私人的，安全的，大量的，不限速的储存空间。当然，除此之外，这个产品还可以用作个人的服务器，实现如多媒体，游戏机，广告过滤器等功能。
+Pironman 5 NAS，内置1个2.5G网口+ 1个千兆网口（树莓派原本自带），给你提供更快的网络速度，配备2个3.5寸（兼容2.5寸）机械硬盘的槽位，可以配置软件RAID0或者RAID1. 配备9cm大风扇，可以更安静的给整个设备提供良好的散热性能。配备OLED屏显示树莓派的基本信息，和磁盘信息。把micro HDMI接口转接为更常用的标准HDMI接口，增加正面USB方便快速访问。
 
 The case integrates a PCIe Gen 2 Switch with two M.2 M key PCIe slots supporting 2230, 
 2242, 2260, and 2280, allowing the installation of two NVMe Gen2 SSDs or AI accelerators. 
@@ -55,34 +45,9 @@ Additionally, GPIO expansion is provided for convenient extension of the Raspber
 
 .. image:: img/pironman5.JPG
     :width: 400
-    
 
 
-Elevate your Raspberry Pi 5 with the |link_pironman5|, our top-tier case designed for unmatched style and functionality. It's the perfect blend of aesthetics and performance:
 
-* Raspberry Pi 5 mini PC
-* 0.96" OLED Display showing Raspberry Pi's CPU usage, temperature, disk usage, IP address, RAM usage etc.
-* With a built-in vibration switch, tapping the case gently wakes up the OLED display.
-* Tower cooler can cool a 100% CPU load Pi to 39°C at 25°C room temperature
-* 2 RGB Fans, with GPIO control
-* 1 PWM Fan on the Tower Cooler is controlled by the Raspberry Pi system.
-* Integrated PCIe Gen 2 Switch with two M.2 M key PCIe interfaces, which can install two NVMe Gen2 solid-state drives or AI accelerators.
-* Supports four (PCIe Gen 2.0) NVMe M.2 SSD sizes: 2230, 2242, 2260, and 2280.
-* 4 WS2812 Addressable RGB LED light up the whole case with cool light effect
-* IR Receiver for multi-media center like Kodi or Volumio
-* Retro metal power button for safe shut down
-* External GPIO extender with pin name label, for easy access
-* Equipped with a spring-loaded socket for easy card removal
-* Aluminum main body with dark Acrylic side panel
-* Features two standard HDMI ports
-
-The |link_pironman5| is not just a case; it's an upgrade that transforms your Raspberry Pi 5 into a powerful, efficient, and stylish device. Get yours now and experience the future of Raspberry Pi cases!
-
-.. note::
-
-    You need to install an OS that supports Raspberry Pi 5. Please use the latest Raspberry Pi Imager tool for system installation. The currently tested systems are:
-
-   .. image:: install/img/compitable_os.png
 
 If you have any questions, please send an email to service@sunfounder.com and we will respond as soon as possible.
 
@@ -104,6 +69,33 @@ If you have any questions, please send an email to service@sunfounder.com and we
     advanced/advanced
     compitable_nvme_ssd
     faq
+
+
+
+    
+
+**Parameters**
+
+* Dimension: 108.8 x 108.8 x 216mm
+* Material
+    * Main body: aluminum alloy
+    * Side panel: acrylic
+* Support Platform: Raspberry Pi 5
+* Power Input: USB Type C, 12V/4A
+* Interfaces
+    * Raspberry Pi standard 40-Pin GPIO
+    * spring-loaded Micro SD socket
+    * USB Type C power input
+    * 2 x USB 2.0
+    * 2 x USB 3.0
+    * Gigabit LAN port
+    * 2 x 4Kp60 HDMI Type A
+* Power button
+* OLED screen: 0.96'' 128x64 resolution
+* 9025 PWM Fan
+* Tower Cooler
+* Storage: 3.5-inch SATA (compatible with 2.5-inch) x2, micro SD card x1
+* 1220 Battery for RTC
 
 **Copyright Notice**
 
