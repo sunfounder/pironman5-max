@@ -16,35 +16,25 @@ Pironman 5 NAS
 ================================================================================
 
 
-Thanks for choosing our |link_pironman5|.
 
 
-Pironman 5 NAS是我们Pironman 树莓派机箱系列的新产品。只适配目前最新的树莓派5。NAS Network Attached Storage，是一个本地网络储存盘，可以给你提供私人的，安全的，大量的，不限速的储存空间。当然，除此之外，这个产品还可以用作个人的服务器，实现如多媒体，游戏机，广告过滤器等功能。
-Pironman 5 NAS，内置1个2.5G网口+ 1个千兆网口（树莓派原本自带），给你提供更快的网络速度，配备2个3.5寸（兼容2.5寸）机械硬盘的槽位，可以配置软件RAID0或者RAID1. 配备9cm大风扇，可以更安静的给整个设备提供良好的散热性能。配备OLED屏显示树莓派的基本信息，和磁盘信息。把micro HDMI接口转接为更常用的标准HDMI接口，增加正面USB方便快速访问。
+**Pironman 5 NAS Overview**
 
-The case integrates a PCIe Gen 2 Switch with two M.2 M key PCIe slots supporting 2230, 
-2242, 2260, and 2280, allowing the installation of two NVMe Gen2 SSDs or AI accelerators. 
-Users can set up two NVMe SSDs in software RAID 0 or RAID 1 for NAS configurations; 
-combine one AI accelerator and one NVMe SSD to boost AI performance; 
-or use two AI accelerators for even stronger AI capabilities. 
-Additionally, GPIO expansion is provided for convenient extension of the Raspberry Pi’s functionality.
+Pironman 5 NAS is the latest addition to our Pironman Raspberry Pi case series, designed exclusively for the new Raspberry Pi 5. It’s not only a powerful local network storage (NAS) system, but also a versatile personal server capable of hosting multimedia applications, game emulators, ad-blocking services, and more.
+
+As a high-performance NAS solution, Pironman 5 NAS features:
+
+* **Dual Network Ports**: Built-in 2.5G Ethernet port and the Raspberry Pi’s native Gigabit Ethernet, offering high-speed data transfer and better network performance.
+* **Dual Drive Bays with RAID Support**: Supports two 3.5" or 2.5" SATA drives and allows software RAID 0 or RAID 1 configuration for flexible storage capacity and data redundancy.
+* **Efficient Cooling System**: Equipped with a large 90mm fan for effective, quiet cooling of the entire system.
+* **OLED Status Display**: Integrated OLED screen displays essential system stats and drive information in real-time, helping you monitor device health at a glance.
+* **User-Friendly Interface Design**: Converts the micro HDMI port to a standard HDMI connector, and adds a front-access USB port for convenient device interaction.
+
+Pironman 5 NAS is a professional-grade solution tailored for users building their own private cloud, home media center, or edge computing node.
 
 
-.. .. note::
-
-..     This document is available in the following languages.
-
-..     * |link_german_tutorials|
-..     * |link_jp_tutorials|
-..     * |link_en_tutorials|
-..     * |link_fr_tutorials|
-..     * |link_es_tutorials|
-..     * |link_it_tutorials|
-    
-..     Please click on the respective links to access the document in your preferred language.
-
-.. image:: img/pironman5.JPG
-    :width: 400
+.. .. image:: img/pironman5.JPG
+..     :width: 400
 
 
 
