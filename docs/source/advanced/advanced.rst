@@ -14,7 +14,7 @@
 
 .. _advanced:
 
-6. Advanced
+7. Advanced
 =========================
 
 

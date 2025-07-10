@@ -31,11 +31,10 @@
 
 **Optional Components**
 
-* M.2 NVMe SSD
+* 3.5-inch and 2.5-inch SATA Drives
 
-    The Pironman 5 features an NVMe PIP with two M.2 SSD connectors, 
-    accommodating four NVMe M.2 SSD sizes: 2230, 2242, 2260, and 2280. 
-    The connection is certified for Gen 2.0 speeds (5 GT/sec).
+    The Pironman 5 NAS supports optional storage expansion through one or two 3.5-inch SATA or 2.5-inch drives. This flexible configuration allows users to enhance their storage capacity using standard hard drives or SSDs, making it ideal for data-heavy applications or media storage setups.
+
 
 * Screen
 

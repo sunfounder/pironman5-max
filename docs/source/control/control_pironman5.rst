@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-5. Control with Commands or Dashboard
+6. Control with Commands or Dashboard
 =======================================================
 
 Once you have successfully installed the ``pironman5`` module, the ``pironman5.service`` will automatically start upon reboot.
