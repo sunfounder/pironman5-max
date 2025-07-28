@@ -31,6 +31,7 @@ In this chapter, you will learn how to install the operating systems. All the in
         :maxdepth: 1
 
         install_raspberry_os
-        install_the_other_os
+        
+.. install_the_other_os
 
 
