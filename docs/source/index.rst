@@ -57,7 +57,6 @@ If you have any questions, please send an email to service@sunfounder.com and we
     set_up/set_up_pironman5
     control/control_pironman5
     advanced/advanced
-    compitable_nvme_ssd
     faq
 
 
