@@ -174,4 +174,4 @@ Now officially start installing the **Pironman 5** add-on.
 
 .. note::
 
-    For more information and usage of this Pironman 5 web page, please refer to: :ref:`view_control_dashboard`.
+    For more information and usage of this Pironman 5 web page, please refer to: :ref:`nas_view_control_dashboard`.

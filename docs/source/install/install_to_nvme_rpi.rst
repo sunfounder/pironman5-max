@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _install_to_nvme_rpi:
+.. _nas_install_to_nvme_rpi:
 
 Installing the OS on an NVMe SSD
 ===================================
@@ -25,7 +25,7 @@ If you are using an NVMe SSD and have an adapter to connect the NVMe SSD to your
 * A NVMe to USB Adapter
 * Micro SD Card and Reader
 
-.. _update_bootloader:
+.. _nas_update_bootloader:
 
 1. Update the Bootloader
 --------------------------------

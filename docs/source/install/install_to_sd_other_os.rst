@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _install_to_sd_home_bridge:
+.. _nas_install_to_sd_home_bridge:
 
 Installing the OS on a Micro SD Card
 =============================================

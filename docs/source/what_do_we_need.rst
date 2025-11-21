@@ -21,9 +21,9 @@
 
     The Pironman 5 is fully compatible with the Raspberry Pi 5.
 
-* 5V/5A Power Adapter
+.. * 5V/5A Power Adapter
 
-    A 5V/5A power adapter is required to power the Pironman 5 and its components.
+..     A 5V/5A power adapter is required to power the Pironman 5 and its components.
 
 * Micro SD Card
  
@@ -35,6 +35,9 @@
 
     The Pironman 5 NAS supports optional storage expansion through one or two 3.5-inch SATA or 2.5-inch drives. This flexible configuration allows users to enhance their storage capacity using standard hard drives or SSDs, making it ideal for data-heavy applications or media storage setups.
 
+* SSD Drives 
+
+    The Pironman 5 NAS supports optional storage expansion through one or two SSD drives. This flexible configuration allows users to enhance their storage capacity using high-speed SSDs, making it ideal for data-intensive applications or media storage setups.
 
 * Screen
 

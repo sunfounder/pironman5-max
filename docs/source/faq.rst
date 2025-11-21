@@ -18,7 +18,7 @@ FAQ
 How to disable web dashboard?
 ------------------------------------------------------
 
-Once you have completed the installation of the ``pironman5`` module, you will be able to access the :ref:`view_control_dashboard`.
+Once you have completed the installation of the ``pironman5`` module, you will be able to access the :ref:`nas_view_control_dashboard`.
       
 If you do not need this feature and want to reduce CPU and RAM usage, you can disable the dashboard during the installation of ``pironman5`` by adding the ``--disable-dashboard`` flag.
       
@@ -40,14 +40,14 @@ How to Control Components Using the ``pironman5`` Command
 ----------------------------------------------------------------------
 You can refer to the following tutorial to control the components of the Pironman 5 using the ``pironman5`` command.
 
-* :ref:`view_control_commands`
+* :ref:`nas_view_control_commands`
 
 How to Change the Raspberry Pi Boot Order Using Commands
 -------------------------------------------------------------
 
 If you are already logged into your Raspberry Pi, you can change the boot order using commands. Detailed instructions are as follows:
 
-* :ref:`configure_boot_ssd`
+* :ref:`nas_configure_boot_ssd`
 
 
 How to Modify the Boot Order with Raspberry Pi Imager?
@@ -57,7 +57,7 @@ In addition to modifying the ``BOOT_ORDER`` in the EEPROM configuration, you can
 
 It is recommended to use a spare card for this step.
 
-* :ref:`update_bootloader`
+* :ref:`nas_update_bootloader`
 
 .. How to Copy the System from the SD Card to an NVMe SSD?
 .. -------------------------------------------------------------
@@ -65,7 +65,7 @@ It is recommended to use a spare card for this step.
 .. If you have an NVMe SSD but do not have an adapter to connect your NVMe to your computer, you can first install the system on your Micro SD card. Once the Pironman 5 boots up successfully, you can copy the system from your Micro SD card to your NVMe SSD. Detailed instructions are as follows:
 
 
-.. * :ref:`copy_sd_to_nvme_rpi`
+.. * :ref:`nas_copy_sd_to_nvme_rpi`
 
 
 OLED Screen Not Working?
@@ -113,7 +113,7 @@ If the OLED screen is not displaying or is displaying incorrectly, follow these 
       cat /var/log/pironman5/pm_auto.oled.log
 
 
-.. _openssh_powershell:
+.. _nas_openssh_powershell:
 
 Install OpenSSH via Powershell
 -----------------------------------
@@ -176,4 +176,4 @@ It means your computer system is too old and does not have `OpenSSH <https://lea
 If I set up OMV, can I still use the Pironman5's function?
 --------------------------------------------------------------------------------------------------------
 
-Yes, OpenMediaVault is set up on the Raspberry Pi system. Please follow the steps of :ref:`set_up_pi_os` to continue the configuration.
+Yes, OpenMediaVault is set up on the Raspberry Pi system. Please follow the steps of :ref:`nas_set_up_pi_os` to continue the configuration.

@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _view_control_commands:
+.. _nas_view_control_commands:
 
 Control with Commands
 ========================================
@@ -21,7 +21,8 @@ In addition to viewing data from the Pironman 5 and controlling various devices 
 .. note::
 
   * For the **Home Assistant** system, you can only monitor and control the Pironman 5 through the dashboard by opening the webpage at ``http://<ip>:34001``.
-  * For the **Batocera.linux** system, you can only monitor and control the Pironman 5 via commands. It is important to note that any changes to the configuration require a restart of the service using ``pironman5 restart`` to take effect.
+  
+  .. * For the **Batocera.linux** system, you can only monitor and control the Pironman 5 via commands. It is important to note that any changes to the configuration require a restart of the service using ``pironman5 restart`` to take effect.
 
 View the Basic Configurations
 -----------------------------------
@@ -155,25 +156,4 @@ To protect the OLED, the OLED will be turned off. After the OLED is turned off, 
     sudo pironman5 -os 10
   
 
-
-
-
-Checkout the Infrared Receiver
----------------------------------------
-
-
-
-* Install the ``lirc`` module:
-
-  .. code-block:: shell
-
-    sudo apt-get install lirc -y
-
-* Now, test the IR Receiver by running the following command. 
-
-  .. code-block:: shell
-
-    mode2 -d /dev/lirc0
-
-* After running the command, press a button on the remote control, and the code of that button will be printed.
 

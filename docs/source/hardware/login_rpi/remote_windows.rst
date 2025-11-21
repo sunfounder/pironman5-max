@@ -46,7 +46,7 @@ For Windows 10 or higher users, remote login to a Raspberry Pi can be achieved t
 
     .. warning::
 
-        If an error appears stating ``The term 'ssh' is not recognized as the name of a cmdlet...``, your system may not have SSH tools pre-installed. In this case, you need to manually install OpenSSH following :ref:`openssh_powershell`, or use a third-party tool like |link_putty|.
+        If an error appears stating ``The term 'ssh' is not recognized as the name of a cmdlet...``, your system may not have SSH tools pre-installed. In this case, you need to use a third-party tool like |link_putty|.
 
 #. A security message will appear on your first login. Enter ``yes`` to proceed.
 

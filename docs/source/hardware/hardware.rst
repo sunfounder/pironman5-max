@@ -12,34 +12,24 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-Features
-======================
+.. _nas_hardware:
 
-**Parameters**
+7. Hardware
+=========================
 
-* Dimension: 108.8 x 108.8 x 216mm
-* Material
-    * Main body: aluminum alloy
-    * Side panel: acrylic
-* Support Platform: Raspberry Pi 5
-* Power Input: USB Type C, 12V/4A
-* Interfaces
-    * Raspberry Pi standard 40-Pin GPIO
-    * spring-loaded Micro SD socket
-    * USB Type C power input
-    * 2 x USB 2.0
-    * 2 x USB 3.0
-    * Gigabit LAN port
-    * 2 x 4Kp60 HDMI Type A
-* Power button
-* OLED screen: 0.96'' 128x64 resolution
-* 9025 PWM Fan
-* Tower Cooler
-* Storage: 3.5-inch SATA (compatible with 2.5-inch) x2, micro SD card x1
-* 1220 Battery for RTC
 
-**Dimensional Drawing**
+This chapter is a detailed description of all the components in Pironman, as well as the associated software configuration.
 
-.. image:: img/pironman5_dimension.png
-    :width: 800
 
+.. toctree::
+    :maxdepth: 2
+    
+    login_rpi/login_rpi
+    features
+    nas_hat
+    nas_nvme_board
+    fans
+    oled_screen
+    microsd_extender
+    hdmi_adapter
+    

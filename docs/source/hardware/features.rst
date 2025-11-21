@@ -12,32 +12,33 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-OLED Screen
-===================
+Features
+======================
 
-.. image:: img/oled_screen.png
+**Parameters**
 
-.. image:: img/oled_screen2.png
+* Dimension: 108.8 x 108.8 x 216mm
+* Material
+    * Main body: aluminum alloy
+    * Side panel: acrylic
+* Support Platform: Raspberry Pi 5
+* Power Input: USB Type C, 12V/5A
+* Interfaces
+    * Raspberry Pi standard 40-Pin GPIO
+    * spring-loaded Micro SD socket
+    * USB Type C power input
+    * 2 x USB 2.0
+    * 2 x USB 3.0
+    * Gigabit LAN port
+    * 2 x 4Kp60 HDMI Type A
+* Power button
+* OLED screen: 0.96'' 128x64 resolution
+* 9025 PWM Fan, 3010 CPU Fan
+* Storage: 3.5-inch SATA (compatible with 2.5-inch) x2, micro SD card x1, PCIe Gen2 x1 NVMe SSD x2
+* 1220 Battery for RTC
 
-The OLED module can be directly fixed on the Piroman5 NAS via 4-pin pins.
+**Dimensional Drawing**
 
-* **Size**: 0.96''
-* **Material**: PM OLED
-* **Color**: White light
-* **Driver**: SSD1306
-* **Voltage**: 3.3V
-* **Resolution**: 128*64
-* **Display Area**: 21.74x10.86mm
-* **Panel Size**: 26.70x19.26x1.42mm
-* **Pixel Pitch**: 0.17x0.17mm
-* **Pixel Size**: 0.154x0.154mm
-* **Viewing Angle**: Full view
-* **Operating Temperature**: -20~70°C
-* **Communication Method**: IIC
-* **Address**: 0x3C or 0x3D
+.. image:: img/pironman5_dimension.png
+    :width: 800
 
-Connect the pads on the back and the address will change from 0x3C to 0x3D.
-
-
-
-.. image:: img/oled_screen_b.png

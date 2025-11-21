@@ -1,4 +1,4 @@
-NAS Expansion Board
+Pironman 5 NAS HAT
 =========================
 
 
@@ -52,7 +52,14 @@ Since I2C allows multiple devices on the same bus, these pins are also accessibl
 .. image:: img/nas_b_fan.png
 
 The fan header adapts the Raspberry Pi’s 5V SH1.0 fan interface to a standard 12V PC case fan connector.  
-The ``FAN IN`` port connects to the Raspberry Pi, while the ``FAN OUT`` port connects to the external fan.  
+The ``FAN RPi`` port connects to the Raspberry Pi, while the ``TOP FAN`` port connects to the biggest fan on the case, and the ``CPU`` port connects to the activate cooler.
+
+**Fan Frequency Generator**
+
+.. image:: img/nas_b_fan_fg.png
+
+The Raspberry Pi has a Fan Frequency Generator interface that outputs a pulse signal proportional to the fan speed. The main control system reads the frequency of this pulse to calculate the real-time fan speed and determine whether the fan is running or experiencing any issues. You can switch jumpers to control either the top fan or the active cooler.
+
 
 **Power Button and Power Control**
 
@@ -85,8 +92,17 @@ The board is designed to be compatible with a dedicated OLED display that can be
 
 **Default ON/OFF Jumper**
 
+
+.. image:: img/nas_b_onoff.png
+
 Default power behavior can be configured via a jumper:
 
 - Jumper on **ON** side: Auto power-on when power is applied  
 - Jumper on **OFF** side: Requires pressing the power button to turn on
 
+**NVMe State**
+
+
+.. image:: img/nas_b_nvmestate.png
+
+To indicate the state of the NVMe drive.

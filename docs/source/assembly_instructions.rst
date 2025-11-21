@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _assembly_instructions:
+.. _nas_assembly_instructions:
 
 2. Assembly Instructions
 =============================================

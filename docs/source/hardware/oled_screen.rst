@@ -12,33 +12,37 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _advanced:
+OLED Screen
+===================
 
-7. Advanced
-=========================
+.. image:: img/oled1.svg
+    :width: 40%
+
+.. image:: img/oled2.svg
+    :width: 40%
 
 
-This chapter is a detailed description of all the components in Pironman, as well as the associated software configuration.
+The OLED module can be directly fixed on the Piroman5 NAS via 4-pin pins.
+
+* **Size**: 0.96''
+* **Material**: PM OLED
+* **Color**: White light
+* **Driver**: SSD1306
+* **Voltage**: 3.3V
+* **Resolution**: 128*64
+* **Display Area**: 21.74x10.86mm
+* **Panel Size**: 26.70x19.26x1.42mm
+* **Pixel Pitch**: 0.17x0.17mm
+* **Pixel Size**: 0.154x0.154mm
+* **Viewing Angle**: Full view
+* **Operating Temperature**: -20~70°C
+* **Communication Method**: IIC
+* **Address**: 0x3C or 0x3D
+
+Connect the pads on the back and the address will change from 0x3C to 0x3D.
 
 
-.. toctree::
-    :maxdepth: 2
-    
-    login_rpi/login_rpi
-    features
-    nas_board
-    fans
-    oled_screen
-    microsd_extender
-    hdmi_adapter
-    
-    .. io_board
-    .. 
-    .. nvme_pip
-    .. 
-    .. power_switch_conventor
-    .. tower_cooler
-    .. 
 
-    
-    .. 
+.. image:: img/oled_screen_b.png
+    :width: 400
+    :align: center

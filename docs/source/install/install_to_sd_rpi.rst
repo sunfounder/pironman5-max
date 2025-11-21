@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _install_os_sd_rpi:
+.. _nas_install_os_sd_rpi:
 
 Installing the OS on a Micro SD Card
 ============================================================

@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _set_up_pironman5:
+.. _nas_set_up_pironman5:
 
 5. Set up or Install Software
 ================================================
@@ -30,6 +30,7 @@ You can then proceed to select the configuration tutorial based on your system.
     :maxdepth: 1
 
     set_up_rpi_os 
+
 
 .. set_up_home_assistant
 

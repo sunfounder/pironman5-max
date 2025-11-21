@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _set_up_pi_os:
+.. _nas_set_up_pi_os:
 
 Set Up on Raspberry Pi
 ==================================================
@@ -71,9 +71,9 @@ Downloading and Installing the ``pironman5`` Module
    
    * The OLED screen displays CPU, RAM, Disk Usage, CPU Temperature, and the Raspberry Pi's IP Address.
      
-   .. note::
+   .. .. note::
     
-     Fans won't spin unless the temperature hits 60°C. For different activation temperatures, see :ref:`cc_control_fan`.
+   ..   Fans won't spin unless the temperature hits 60°C. For different activation temperatures, see :ref:`cc_control_fan`.
 
 #. You can use the ``systemctl`` tool to ``start``, ``stop``, ``restart``, or check the ``status`` of ``pironman5.service``.
 

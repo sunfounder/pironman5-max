@@ -26,6 +26,7 @@ As a high-performance NAS solution, Pironman 5 NAS features:
 
 * **Dual Network Ports**: Built-in 2.5G Ethernet port and the Raspberry Pi’s native Gigabit Ethernet, offering high-speed data transfer and better network performance.
 * **Dual Drive Bays with RAID Support**: Supports two 3.5" or 2.5" SATA drives and allows software RAID 0 or RAID 1 configuration for flexible storage capacity and data redundancy.
+* **Dual NVMe Slots**: Equipped with two M.2 NVMe slots for fast and efficient storage, ideal for booting and running applications.
 * **Efficient Cooling System**: Equipped with a large 90mm fan for effective, quiet cooling of the entire system.
 * **OLED Status Display**: Integrated OLED screen displays essential system stats and drive information in real-time, helping you monitor device health at a glance.
 * **User-Friendly Interface Design**: Converts the micro HDMI port to a standard HDMI connector, and adds a front-access USB port for convenient device interaction.
@@ -56,12 +57,10 @@ If you have any questions, please send an email to service@sunfounder.com and we
     omv
     set_up/set_up_pironman5
     control/control_pironman5
-    advanced/advanced
+    hardware/hardware
+    compatible_nvme_ssd
     faq
 
-
-
-    
 
 **Parameters**
 
@@ -70,7 +69,7 @@ If you have any questions, please send an email to service@sunfounder.com and we
     * Main body: aluminum alloy
     * Side panel: acrylic
 * Support Platform: Raspberry Pi 5
-* Power Input: USB Type C, 12V/4A
+* Power Input: USB Type C, 12V/5A
 * Interfaces
     * Raspberry Pi standard 40-Pin GPIO
     * spring-loaded Micro SD socket
@@ -81,9 +80,8 @@ If you have any questions, please send an email to service@sunfounder.com and we
     * 2 x 4Kp60 HDMI Type A
 * Power button
 * OLED screen: 0.96'' 128x64 resolution
-* 9025 PWM Fan
-* Tower Cooler
-* Storage: 3.5-inch SATA (compatible with 2.5-inch) x2, micro SD card x1
+* 9025 PWM Fan, 3010 CPU Fan
+* Storage: 3.5-inch SATA (compatible with 2.5-inch) x2, micro SD card x1, PCIe Gen2 x1 NVMe SSD x2
 * 1220 Battery for RTC
 
 **Copyright Notice**

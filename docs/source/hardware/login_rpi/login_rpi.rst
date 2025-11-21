@@ -12,7 +12,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _login_rpi:
+.. _nas_login_rpi:
 
 Log in to the Raspberry Pi OS
 =====================================

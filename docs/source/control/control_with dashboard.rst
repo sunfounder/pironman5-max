@@ -13,7 +13,7 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-.. _view_control_dashboard:
+.. _nas_view_control_dashboard:
 
 View and Control from Dashboard
 =========================================

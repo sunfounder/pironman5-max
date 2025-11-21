@@ -6,7 +6,7 @@
    OpenMediaVault **does not** support installation on the Raspberry Pi OS desktop or Home Assistant OS.
 
    Please make sure you have installed the correct operating system and configured the network.
-   The procedure here is consistent with :ref:`install_os_sd_rpi`, but when selecting an image, please choose Raspberry Pi OS Lite from Raspberry Pi OS (other).
+   The procedure here is consistent with :ref:`nas_install_os_sd_rpi`, but when selecting an image, please choose Raspberry Pi OS Lite from Raspberry Pi OS (other).
 
    .. image:: img/omv/omv-install-1.png
 
@@ -15,7 +15,7 @@ OpenMediaVault (abbreviated as OMV) is an open-source Network Attached Storage (
 Please follow these steps to install OpenMediaVault on your Raspberry Pi:
 
 1. Connect to Your Raspberry Pi Using SSH
--------------------------------------
+----------------------------------------------------------
 
    Enter the following command in the terminal:
 
