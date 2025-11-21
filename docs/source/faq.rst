@@ -12,168 +12,254 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
+
 FAQ
-============
+=============================
 
-How to disable web dashboard?
-------------------------------------------------------
+This section provides answers to the most common issues and questions when installing,
+configuring, and operating the Pironman 5 NAS. The content is organized by topic for clarity.
 
-Once you have completed the installation of the ``pironman5`` module, you will be able to access the :ref:`nas_view_control_dashboard`.
-      
-If you do not need this feature and want to reduce CPU and RAM usage, you can disable the dashboard during the installation of ``pironman5`` by adding the ``--disable-dashboard`` flag.
-      
-.. code-block:: shell
-      
-   cd ~/pironman5
-   sudo python3 install.py --disable-dashboard
-      
-If you have already installed ``pironman 5``, you can remove the ``dashboard`` module and ``influxdb``, then restart pironman5 to apply the changes:
-      
-.. code-block:: shell
-      
-   /opt/pironman5/env/bin/pip3 uninstall pm-dashboard influxdb
-   sudo apt purge influxdb
-   sudo systemctl restart pironman5
+.. contents::
+   :local:
+   :depth: 2
 
+General Questions
+-----------------------------
 
-How to Control Components Using the ``pironman5`` Command
-----------------------------------------------------------------------
-You can refer to the following tutorial to control the components of the Pironman 5 using the ``pironman5`` command.
+**What operating systems are supported for Pironman 5 NAS?**  
+Pironman 5 NAS officially supports Raspberry Pi OS Lite (64-bit).  
+Desktop versions and Home Assistant OS are **not** supported for OpenMediaVault installation.
 
-* :ref:`nas_view_control_commands`
+**Can I boot directly from NVMe SSD?**  
+Yes. The Raspberry Pi 5 can boot from NVMe after updating the bootloader and setting the
+boot priority to *NVMe/USB → SD Card*. Ensure you complete the bootloader update steps
+before writing the OS to the NVMe drive.
 
-How to Change the Raspberry Pi Boot Order Using Commands
--------------------------------------------------------------
+**Do both NVMe slots support booting?**  
+Yes. Both M.2 NVMe slots support booting, but only PCIe Gen2 speeds are supported due to
+the PCIe switch.
 
-If you are already logged into your Raspberry Pi, you can change the boot order using commands. Detailed instructions are as follows:
+Hardware & Compatibility
+------------------------
 
-* :ref:`nas_configure_boot_ssd`
+**Which NVMe SSDs are compatible?**  
+Most 2280 PCIe Gen3/Gen4 drives are compatible but will operate at PCIe Gen2 speed.
+A compatibility list is available in the hardware chapter.
 
+**Can I use 3.5'' HDDs without external power?**  
+Yes. The NAS HAT provides 12V power via the included power supply (12V/5A).  
+Do not use lower-current adapters.
 
-How to Modify the Boot Order with Raspberry Pi Imager?
----------------------------------------------------------------
+**Why is the OLED screen blank?**  
+Common causes:
 
-In addition to modifying the ``BOOT_ORDER`` in the EEPROM configuration, you can also use the **Raspberry Pi Imager** to change the boot order of your Raspberry Pi.
+1. The FPC cable is not fully inserted.  
+2. The pironman5 service is not running.  
+3. The I2C interface is disabled.  
+4. The OLED address (0x3C) is not detected.
 
-It is recommended to use a spare card for this step.
+Check with:
 
-* :ref:`nas_update_bootloader`
+.. code-block:: bash
 
-.. How to Copy the System from the SD Card to an NVMe SSD?
-.. -------------------------------------------------------------
+    i2cdetect -y 1
 
-.. If you have an NVMe SSD but do not have an adapter to connect your NVMe to your computer, you can first install the system on your Micro SD card. Once the Pironman 5 boots up successfully, you can copy the system from your Micro SD card to your NVMe SSD. Detailed instructions are as follows:
+If 0x3C is missing, recheck the cable.
 
+Cooling & Fans
+--------------
 
-.. * :ref:`nas_copy_sd_to_nvme_rpi`
+**Why is the top fan not spinning?**  
+Check the following:
 
+- The fan is connected to the correct header.
+- The pironman5 service is running.
+- The fan mode is not set to "off" in the dashboard.
+- The jumper on the Fan Frequency Generator is set correctly.
 
-OLED Screen Not Working?
---------------------------
+**The fan speed reading is always 0 RPM. What should I do?**
 
+- Ensure the fan supports tachometer output.
+- Verify the tachometer jumper is connected to the correct fan (TOP FAN or CPU FAN).
+- Restart the service:
 
-If the OLED screen is not displaying or is displaying incorrectly, follow these troubleshooting steps:
+.. code-block:: bash
 
-1. **Check the OLED Screen Connection**
+    sudo systemctl restart pironman5.service
 
-   Ensure that the FPC cable of the OLED screen is properly connected.
+Power & Button
+--------------
 
-2. **Check OS Compatibility**
+**The system does not turn on automatically. How do I enable auto-power?**  
+Move the ON/OFF jumper on the NAS HAT to the **ON** position.  
+This enables auto-power-on when the 12V adapter is connected.
 
-   Make sure you are running a compatible operating system on your Raspberry Pi.
+**Long-press shutdown does not fully power off. Why?**  
+You must enable:
 
-3. **Check I2C Address**
+.. code-block:: 
+   
+   POWER_OFF_ON_HALT=1
 
-   Run the following command to check whether the OLED's I2C address (0x3C) is recognized:
 
-   .. code-block:: shell
 
-      sudo i2cdetect -y 1
+Using:
 
-   If the address is not detected, enable I2C using the following command:
+.. code-block:: bash
 
-   .. code-block:: shell
+    sudo rpi-eeprom-config -e
 
-      sudo raspi-config
+Without this setting, the microcontroller cannot cut main power after the OS halts.
 
-4. **Restart the pironman5 Service**
+Storage & RAID
+--------------
 
-   Restart the `pironman5` service to see if it resolves the issue:
+**Why doesn’t OpenMediaVault detect my NVMe or SATA drives?**
 
-   .. code-block:: shell
+- Confirm the OS is Raspberry Pi OS Lite (desktop version will fail).
+- Ensure the PCIe boot delay was disabled by adding:
 
-      sudo systemctl restart pironman5.service
+  ``dtparam=pciex1_no_10s=on``
 
-5. **Check the Log File**
+  to ``config.txt`` on the boot partition.
+- Check cable seating for SATA drives.
+- Reboot the system after installing OMV.
 
-   If the issue persists, check the log file for error messages and provide the information to customer support for further analysis:
+**Creating RAID 0/1 fails with "500 Internal Server Error". What should I do?**  
+This is a known OMV issue. Reboot OMV and try again.  
+Ensure both drives are wiped before creating RAID.
 
-   .. code-block:: shell
+**Why is RAID synchronization extremely slow?**  
+RAID operations are CPU-bound on Raspberry Pi.  
+Speed improves after initial sync completes. You can monitor progress in OMV under
+*Storage → RAID Management*.
 
-      cat /var/log/pironman5/pm_auto.oled.log
+OpenMediaVault
+--------------
 
+**I cannot access OMV using http://raspberrypi.local. What should I try?**
 
-.. _nas_openssh_powershell:
+- Use the IP address instead: ``http://<Pi-IP>``  
+- Ensure both your computer and the Pi are on the same network.
+- If using Wi-Fi, confirm the SSID and country code are set in Raspberry Pi Imager.
+- If you enabled SSH key-only login, ensure the key is valid.
 
-Install OpenSSH via Powershell
------------------------------------
+**OMV asks for login but credentials do not work. What is the default?**
 
-When you use ``ssh <username>@<hostname>.local`` (or ``ssh <username>@<IP address>``) to connect to your Raspberry Pi, but the following error message appears.
+- **Username:** ``admin``
+- **Password:** ``openmediavault``
 
-    .. code-block::
+If you changed it and forgot, reset via SSH:
 
-        ssh: The term 'ssh' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
-        spelling of the name, or if a path was included, verify that the path is correct and try again.
+.. code-block:: bash
 
+    sudo omv-rpc -u admin "UserMgmt" "setPassword" '{"username":"admin","password":"newpass"}'
 
-It means your computer system is too old and does not have `OpenSSH <https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui>`_ pre-installed, you need to follow the tutorial below to install it manually.
+Dashboard & pironman5 Module
+-----------------------------
 
-#. Type ``powershell`` in the search box of your Windows desktop, right click on the ``Windows PowerShell``, and select ``Run as administrator`` from the menu that appears.
+**The dashboard at http://<ip>:34001 does not load. How can I fix it?**
 
-   .. image:: img/powershell_ssh.png
-      :width: 90%
-      
+1. Verify the service is running:
 
-#. Use the following command to install ``OpenSSH.Client``.
+.. code-block:: bash
 
-   .. code-block::
+    sudo systemctl status pironman5.service
 
-        Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+2. Restart the service:
 
-#. After installation, the following output will be returned.
+.. code-block:: bash
 
-   .. code-block::
+    sudo systemctl restart pironman5.service
 
-        Path          :
-        Online        : True
-        RestartNeeded : False
+3. Ensure port 34001 is not blocked by iptables or firewall rules.
 
-#. Verify the installation by using the following command.
+**How do I clear dashboard historical data?**  
+Open the Settings menu in the top-right corner and click **CLEAR**.
 
-   .. code-block::
+NVMe Boot Issues
+----------------
 
-        Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+**My Pi boots only when an SD card is inserted, even after installing the OS on NVMe.**  
+Possible fixes:
 
-#. It now tells you that ``OpenSSH.Client`` has been successfully installed.
+- Ensure the bootloader was correctly written using "NVMe/USB Boot".
+- Ensure ``config.txt`` contains:
 
-   .. code-block::
+  ``dtparam=pciex1_no_10s=on``
 
-        Name  : OpenSSH.Client~~~~0.0.1.0
-        State : Installed
+- Reflash the NVMe OS image.
+- Disconnect all USB storage devices during testing.
 
-        Name  : OpenSSH.Server~~~~0.0.1.0
-        State : NotPresent
+**The NVMe drive is not detected at all. What can I do?**
 
-    .. warning:: 
-        If the above prompt does not appear, it means that your Windows system is still too old, and you are advised to install a third-party SSH tool, like |link_putty|.
+- Reseat the NVMe module.
+- Try the other NVMe slot.
+- Ensure the drive is single-sided (double-sided drives may touch the metal case).
+- Some high-power Gen4 SSDs may fail; try a lower-power model.
 
-#. Now restart PowerShell and continue to run it as administrator. At this point you will be able to log in to your Raspberry Pi using the ``ssh`` command, where you will be prompted to enter the password you set up earlier.
+Network
+-------
 
-   .. image:: img/powershell_login.png
+**The 2.5G Ethernet port doesn't show up. What should I check?**
 
+- Kernel 6.1+ includes r8169 driver required for RTL8125.
+- Check with:
 
+.. code-block:: bash
 
-If I set up OMV, can I still use the Pironman5's function?
---------------------------------------------------------------------------------------------------------
+    ip link
 
-Yes, OpenMediaVault is set up on the Raspberry Pi system. Please follow the steps of :ref:`nas_set_up_pi_os` to continue the configuration.
+If not present:
+
+- Update Raspberry Pi OS:  
+
+.. code-block:: bash
+
+    sudo apt update && sudo apt full-upgrade
+
+**Can I use both Gigabit Ethernet and 2.5G Ethernet simultaneously?**  
+Yes. Both interfaces operate independently and can be bonded or bridged using Linux tools.
+
+Troubleshooting Summary
+-----------------------
+
+**Where can I find logs if something goes wrong?**
+
+Pironman service logs:
+
+.. code-block:: bash
+
+    ls /var/log/pironman5/
+
+Check OLED logs:
+
+.. code-block:: bash
+
+    cat /var/log/pironman5/pm_auto.oled.log
+
+Check service status:
+
+.. code-block:: bash
+
+    sudo systemctl status pironman5.service
+
+**What should I try first if “something doesn't work”?**
+
+A recommended quick checklist:
+
+1. Reboot the Pi.  
+2. Check power supply (12V/5A).  
+3. Confirm cables (NVMe, SATA, OLED).  
+4. Update the system.
+
+.. code-block:: bash
+
+    sudo apt update && sudo apt full-upgrade
+
+5. Restart pironman5:
+
+.. code-block:: bash
+
+    sudo systemctl restart pironman5.service
+
